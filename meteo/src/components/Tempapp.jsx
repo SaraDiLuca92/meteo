@@ -5,6 +5,7 @@ import { useState } from "react";
 const MeteoApp = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("Tortora");
+  const [icon, setIcon] = useState("ciao");
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -15,6 +16,7 @@ const MeteoApp = () => {
       const resJson = await response.json();
       console.log(resJson);
       setCity(resJson.main);
+      console.log(setCity);
     };
 
     fetchApi();
@@ -45,6 +47,8 @@ const MeteoApp = () => {
               <h2 className="tempmin-max">
                 Min: {city.temp_min}°C | Max:{city.temp_max}°C{" "}
               </h2>
+              <h2 className="pressure">pressure:{city.pressure}</h2>
+              <h2 className="humidity">humidity:{city.humidity}</h2>
             </div>{" "}
           </div>
         )}

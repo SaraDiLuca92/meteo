@@ -1,4 +1,5 @@
 import "./App.css";
+
 import BasicExample from "./components/navbar";
 import MeteoApp from "./components/Tempapp";
 
