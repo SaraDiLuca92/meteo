@@ -44,7 +44,7 @@
 .nav {
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: #ffffff00;
   margin-top: 0px;
   height: 50px;
   border-bottom: 1px solid rgb(109, 164, 209);
@@ -81,6 +81,9 @@ body {
   border-radius: 30px;
   margin: 100px;
   padding: 60px;
+  color: #cbe0f3;
+  background: #08080fb5;
+  font-size: xx-large;
 }
 input {
   border-radius: 15px;
@@ -88,5 +91,5 @@ input {
   height: 25px;
 }
 .info {
-  font-family: "Shantell Sans", cursive;
+  font-family: "Rubik Burned", cursive;
 }

@@ -3,7 +3,6 @@ import icon from "../img/800px_COLOURBOX26390506.jpg";
 function BasicExample() {
   return (
     <ul className="nav">
-      <img src={icon} alt="" />
       <li>
         <a href="default.asp">Home</a>
       </li>

@@ -5,7 +5,6 @@ import { useState } from "react";
 const MeteoApp = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("Tortora");
-  const [icon, setIcon] = useState("ciao");
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -30,7 +29,7 @@ const MeteoApp = () => {
             value={search}
             type="search"
             className="inputField"
-            placeholder="put the name of your city"
+            placeholder="name of your city"
             onChange={(event) => {
               setSearch(event.target.value);
             }}
