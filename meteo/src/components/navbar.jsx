@@ -1,11 +1,9 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import icon from "../img/800px_COLOURBOX26390506.jpg";
 
 function BasicExample() {
   return (
     <ul className="nav">
+      <img src={icon} alt="" />
       <li>
         <a href="default.asp">Home</a>
       </li>
@@ -17,7 +15,7 @@ function BasicExample() {
       </li>
       <li>
         <a href="about.asp">About</a>
-      </li>
+      </li>{" "}
     </ul>
   );
 }
